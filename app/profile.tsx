@@ -96,16 +96,16 @@ export default function ProfileScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#0d1117' },
+  container: { flex: 1, backgroundColor: '#000' },
   scrollView: { flex: 1 },
   scrollContent: { paddingHorizontal: 16, paddingTop: 60 },
   header: {
     flexDirection: 'row', justifyContent: 'space-between',
     alignItems: 'center', marginBottom: 24,
   },
-  title: { fontSize: 28, fontWeight: '700', color: '#fff' },
+  title: { fontSize: 34, fontWeight: '700', color: '#fff' },
   profileCard: {
-    backgroundColor: '#161b22',
+    backgroundColor: '#1c1c1e',
     borderRadius: 12,
     padding: 24,
     alignItems: 'center',
@@ -123,9 +123,9 @@ const styles = StyleSheet.create({
   stat: { alignItems: 'center', paddingHorizontal: 24 },
   statNumber: { color: '#fff', fontSize: 18, fontWeight: '700' },
   statLabel: { color: '#8b949e', fontSize: 13, marginTop: 2 },
-  statDivider: { width: 1, height: 30, backgroundColor: '#30363d' },
+  statDivider: { width: 1, height: 30, backgroundColor: '#3d3d3d' },
   card: {
-    backgroundColor: '#161b22', borderRadius: 12,
+    backgroundColor: '#1c1c1e', borderRadius: 12,
     overflow: 'hidden', marginBottom: 20,
   },
   cardRow: {
@@ -134,12 +134,12 @@ const styles = StyleSheet.create({
   },
   cardLabel: { flex: 1, color: '#fff', fontSize: 16, marginLeft: 14 },
   cardValue: { color: '#8b949e', fontSize: 14, marginRight: 8 },
-  divider: { height: StyleSheet.hairlineWidth, backgroundColor: '#30363d', marginLeft: 50 },
+  divider: { height: StyleSheet.hairlineWidth, backgroundColor: '#3d3d3d', marginLeft: 50 },
   signOutButton: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#161b22',
+    backgroundColor: '#1c1c1e',
     borderRadius: 12,
     paddingVertical: 14,
     gap: 10,

@@ -63,29 +63,29 @@ export default function ExploreScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#0d1117' },
+  container: { flex: 1, backgroundColor: '#000' },
   scrollView: { flex: 1 },
   scrollContent: { paddingHorizontal: 16, paddingTop: 60 },
   header: {
     flexDirection: 'row', justifyContent: 'space-between',
     alignItems: 'center', marginBottom: 20,
   },
-  title: { fontSize: 28, fontWeight: '700', color: '#fff' },
+  title: { fontSize: 34, fontWeight: '700', color: '#fff' },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#161b22',
+    backgroundColor: '#1c1c1e',
     borderRadius: 10,
     paddingHorizontal: 14,
     paddingVertical: 12,
     marginBottom: 28,
     borderWidth: 1,
-    borderColor: '#30363d',
+    borderColor: '#3d3d3d',
   },
   searchInput: { flex: 1, color: '#fff', fontSize: 16, marginLeft: 10 },
-  sectionTitle: { fontSize: 14, fontWeight: '600', color: '#8b949e', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 0.5 },
+  sectionTitle: { fontSize: 20, fontWeight: '600', color: '#fff', marginBottom: 12 },
   card: {
-    backgroundColor: '#161b22', borderRadius: 12,
+    backgroundColor: '#1c1c1e', borderRadius: 12,
     overflow: 'hidden', marginBottom: 28,
   },
   repoRow: {
@@ -99,5 +99,5 @@ const styles = StyleSheet.create({
   langDot: { width: 12, height: 12, borderRadius: 6 },
   langText: { color: '#8b949e', fontSize: 12, marginLeft: 6 },
   starsText: { color: '#8b949e', fontSize: 12, marginLeft: 4 },
-  divider: { height: StyleSheet.hairlineWidth, backgroundColor: '#30363d', marginLeft: 16 },
+  divider: { height: StyleSheet.hairlineWidth, backgroundColor: '#3d3d3d', marginLeft: 16 },
 });

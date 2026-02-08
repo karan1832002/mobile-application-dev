@@ -50,17 +50,17 @@ export default function InboxScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#0d1117' },
+  container: { flex: 1, backgroundColor: '#000' },
   scrollView: { flex: 1 },
   scrollContent: { paddingHorizontal: 16, paddingTop: 60 },
   header: {
     flexDirection: 'row', justifyContent: 'space-between',
     alignItems: 'center', marginBottom: 24,
   },
-  title: { fontSize: 28, fontWeight: '700', color: '#fff' },
+  title: { fontSize: 34, fontWeight: '700', color: '#fff' },
   tabsContainer: {
     flexDirection: 'row',
-    backgroundColor: '#161b22',
+    backgroundColor: '#1c1c1e',
     borderRadius: 10,
     padding: 4,
     marginBottom: 32,
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   activeTab: {
-    backgroundColor: '#30363d',
+    backgroundColor: '#3d3d3d',
   },
   tabText: { color: '#8b949e', fontSize: 14, fontWeight: '500' },
   activeTabText: { color: '#fff' },
