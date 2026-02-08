@@ -13,7 +13,7 @@ export default function Index() {
         },
       ]}
     >
-      <Text style={styles.Text}>Edit app/index.tsx to edit this screen.</Text>
+      <Text style={styles.Text}>GITHUB PAGE.</Text>
 
       
     </View>
