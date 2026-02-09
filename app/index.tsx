@@ -1,4 +1,3 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
@@ -7,7 +6,7 @@ import React from "react";
 import { Alert, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const myWorkItems = [
-  { icon: <Octicons name="issue-opened" size={20} color="#3fb950" />, label: 'Issues', color: '#3fb950' },
+  { icon: <Octicons name="issue-opened" size={20} color="#ffffff" />, label: 'Issues', color: '#3fb950' },
   { icon: <Octicons name="git-pull-request" size={20} color="#fff" />, label: 'Pull Requests', color: '#58a6ff' },
   { icon: <Octicons name="comment-discussion" size={20} color="#fff" />, label: 'Discussions', color: '#a371f7' },
   { icon: <Octicons name="project" size={20} color="#fff" />, label: 'Projects', color: '#8b949e' },
