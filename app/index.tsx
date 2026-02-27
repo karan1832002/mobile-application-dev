@@ -2,8 +2,8 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Octicons from '@expo/vector-icons/Octicons';
-import React from "react";
-import { Alert, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React, { useState } from "react";
+import { Alert, Platform, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 const myWorkItems = [
   { icon: <Octicons name="issue-opened" size={20} color="#ffffff" />, label: 'Issues', color: '#3fb950' },
@@ -20,6 +20,7 @@ const agentItems = [
 ];
 
 export default function HomeScreen() {
+  const [showSearch, setShowSearch] = useState(false);
   return (
     <View style={styles.container}>
       <ScrollView
@@ -29,13 +30,21 @@ export default function HomeScreen() {
       >
         {/* Header Icons */}
         <View style={styles.headerIcons}>
-          <TouchableOpacity style={styles.headerIconBtn}>
-            <Ionicons name="add" size={24} color="#fff" />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.headerIconBtn}>
-            <Ionicons name="search" size={22} color="#fff" />
-          </TouchableOpacity>
-        </View>
+  <TouchableOpacity
+    style={styles.headerIconBtn}
+    activeOpacity={0.7}
+    onPress={() => setShowSearch((prev) => !prev)}
+  >
+    <Ionicons name="search" size={22} color="#fff" />
+  </TouchableOpacity>
+</View>
+        {showSearch && (
+  <TextInput
+    placeholder="Search..."
+    placeholderTextColor="#8b949e"
+    style={styles.searchInput}
+  />
+)}
 
         {/* Title */}
         <Text style={styles.title}>Home</Text>
@@ -161,4 +170,14 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
+  searchInput: {
+  backgroundColor: "#1c1c1e",
+  borderRadius: 12,
+  paddingVertical: 12,
+  paddingHorizontal: 14,
+  color: "#fff",
+  marginBottom: 18,
+  borderWidth: 1,
+  borderColor: "#2d333b",
+},
 });
